@@ -17,4 +17,4 @@ adb shell am start -n $PACKAGE/$ACTIVITY
 echo "I will record Your steps. Just use app as usual"
 adb shell getevent -t > events.txt
 ./decode_events.py events.txt > events.sh
-echo "Exec events.sh to replay your actions"
+echo "Exec play.sh to play recorded actions"
